@@ -1,0 +1,59 @@
+// 300, 700, 600, 400
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("./../fonts/OpenSans-Light.woff") format("woff"),
+    url("./../fonts/OpenSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("./../fonts/OpenSans-Regular.woff") format("woff"),
+    url("./../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("./../fonts/OpenSans-SemiBold.woff") format("woff"),
+    url("./../fonts/OpenSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("./../fonts/OpenSans-Bold.woff") format("woff"),
+    url("./../fonts/OpenSans-Bold.woff2") format("woff2");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Courier, monospace;
+  font-weight: 400;
+  font-size: 16px;
+  color: $basic-black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+}

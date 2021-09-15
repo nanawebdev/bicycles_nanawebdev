@@ -1,0 +1,25 @@
+.main-page {
+  width: 100%;
+}
+
+.main-page__bg {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .main-page__bg {
+    object-fit: cover;
+    max-width: 100%;
+    height: 340px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-page__bg {
+    height: 390px;
+  }
+}

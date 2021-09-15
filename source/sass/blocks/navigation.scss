@@ -1,0 +1,46 @@
+.navigation {
+  max-width: 874px;
+  margin: 0 auto;
+}
+
+.navigation .divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba($basic-white, 0.2);
+}
+
+.navigation__logo {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .navigation .divider {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .navigation__logo {
+    display: block;
+    margin-top: 25px;
+    margin-left: 21px ;
+  }
+
+  .navigation {
+    justify-content: space-between;
+  }
+
+  .navigation__burger-button {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .navigation__logo {
+    margin-left: 16px ;
+  }
+}

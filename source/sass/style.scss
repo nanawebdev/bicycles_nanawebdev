@@ -1,3 +1,8 @@
-h1 {
-  color: red;
-}
+@import "./../../node_modules/modern-normalize/modern-normalize";
+@import "./variables.scss";
+@import "./base.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/navigation-list.scss";
+@import "./blocks/main-page.scss";
+@import "./blocks/burger-button.scss";
+@import "./blocks/side-menu.scss";

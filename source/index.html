@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
- <header></header>
+
+<!-- main-page--no-js класс при отсутствии js  -->
+
+<body class="main-page">
+  <picture>
+    <source type="image/webp" media="(max-width: 320px)"
+      srcset="./img/photos/bike-320.webp 1x, ./img/photos/bike-320@2x.webp 2x">
+    <source type="image/webp" media="(max-width: 768px)"
+      srcset="./img/photos/bike-768.webp 1x, ./img/photos/bike-768@2x.webp 2x">
+    <source type="image/webp" srcset="./img/photos/bike.webp 1x, ./img/photos/bike@2x.webp 2x">
+
+    <source media="(max-width: 320px)" srcset="./img/photos/bike-320.jpg 1x, ./img/photos/bike-320@2x.jpg 2x">
+    <source media="(max-width: 768px)" srcset="./img/photos/bike-768.jpg 1x, ./img/photos/bike-768@2x.jpg 2x">
+    <img src="img/photos/bike.jpg" srcset="./img/photos/bike@2x.jpg 2x" width="1440" height="825px"
+      class="main-page__bg" alt="bicycle photo">
+  </picture>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <svg class="navigation__logo logo" width="68" height="21">
+          <use xlink:href="./img/sprite_auto.svg#logo"></use>
+        </svg>
+
+        <button class="navigation__burger-button burger-button js-open-navigation-list" type="button"
+          aria-label="открыть меню навигации">
+          <svg class="menu-icon burger-button__menu-icon" width="30" height="30">
+            <use xlink:href="./img/sprite_auto.svg#menu"></use>
+          </svg>
+        </button>
+        <!-- side-menu--open для открытия меню  -->
+        <div class="side-menu">
+          <button class="side-menu__close js-close-navigation-list" type="button" aria-label="закрыть меню навигации">
+            <svg class="cross" width="50" height="52">
+              <use xlink:href="./img/sprite_auto.svg#cross"></use>
+            </svg>
+          </button>
+
+          <ul class="navigation-list">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">О нас</a>
+              <svg class="arrow" width="25" height="25">
+                <use xlink:href="./img/sprite_auto.svg#arrow"></use>
+              </svg>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Виды велосипедов</a>
+              <svg class="arrow" width="25" height="25">
+                <use xlink:href="./img/sprite_auto.svg#arrow"></use>
+              </svg>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Видео про велосипеды</a>
+              <svg class="arrow" width="25" height="25">
+                <use xlink:href="./img/sprite_auto.svg#arrow"></use>
+              </svg>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Контакты</a>
+              <svg class="arrow" width="25" height="25">
+                <use xlink:href="./img/sprite_auto.svg#arrow"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+      </nav>
+    </div>
+  </header>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
