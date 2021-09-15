@@ -1,15 +1,15 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+const openNavListButton = document.querySelector('.js-open-navigation-list')
+const sideMenu = document.querySelector('.side-menu')
+const closeNavListButton = document.querySelector('.js-close-navigation-list')
 
-pageHeader.classList.remove('page-header--nojs');
+function showNavList() {
+  sideMenu.classList.add('side-menu--open')
+}
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+function closeNavList() {
+  sideMenu.classList.remove('side-menu--open')
+}
+
+openNavListButton.addEventListener('click', showNavList)
+closeNavListButton.addEventListener('click', closeNavList)
