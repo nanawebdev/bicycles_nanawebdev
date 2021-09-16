@@ -13,12 +13,12 @@
 
 <body class="main-page">
   <picture>
-    <source type="image/webp" media="(max-width: 320px)" srcset="./img/photos/bike-320.webp 1x, ./img/photos/bike-320@2x.webp 2x">
-    <source type="image/webp" media="(max-width: 768px)" srcset="./img/photos/bike-768.webp 1x, ./img/photos/bike-768@2x.webp 2x">
+    <source type="image/webp" media="(max-width: 767px)" srcset="./img/photos/bike-320.webp 1x, ./img/photos/bike-320@2x.webp 2x">
+    <source type="image/webp" media="(max-width: 1439px)" srcset="./img/photos/bike-768.webp 1x, ./img/photos/bike-768@2x.webp 2x">
     <source type="image/webp" srcset="./img/photos/bike.webp 1x, ./img/photos/bike@2x.webp 2x">
 
-    <source media="(max-width: 320px)" srcset="./img/photos/bike-320.jpg 1x, ./img/photos/bike-320@2x.jpg 2x">
-    <source media="(max-width: 768px)" srcset="./img/photos/bike-768.jpg 1x, ./img/photos/bike-768@2x.jpg 2x">
+    <source media="(max-width: 767px)" srcset="./img/photos/bike-320.jpg 1x, ./img/photos/bike-320@2x.jpg 2x">
+    <source media="(max-width: 1439px)" srcset="./img/photos/bike-768.jpg 1x, ./img/photos/bike-768@2x.jpg 2x">
     <img src="img/photos/bike.jpg" srcset="./img/photos/bike@2x.jpg 2x" height="825px" class="main-page__bg" alt="bicycle photo">
   </picture>
 
@@ -119,6 +119,53 @@
         </ul>
       </div>
 
+    </section>
+
+    <section class="types">
+      <div class="container">
+        <h3 class="section-title">Виды велосипедов</h3>
+        <div class="types__items">
+          <div class="types__item">
+            <div class="types__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="/img/photos/example-1@2x.webp 2x, /img/photos/example-1.webp 1x">
+                <source type="image/webp" media="(max-width: 1439px)" srcset="/img/photos/example-1-768@2x.webp 2x, /img/photos/example-1-768.webp 1x">
+                <source media="(max-width: 1439px)" srcset="/img/photos/example-1-768@2x.jpg 2x, /img/photos/example-1-768.jpg 1x">
+                <img class="types__img" src="./img/photos/example-1.jpg" srcset="/img/photos/example-1@2x.jpg 2x" alt="фото велосипеда" width="342" height="503">
+              </picture>
+
+            </div>
+
+            <p class="types__title">Дорожный велосипед</p>
+          </div>
+
+          <div class="types__item">
+            <div class="types__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="/img/photos/example-2@2x.webp 2x, /img/photos/example-2.webp 1x">
+                <source type="image/webp" media="(max-width: 1439px)" srcset="/img/photos/example-2-768@2x.webp 2x, /img/photos/example-2-768.webp 1x">
+                <source media="(max-width: 1439px)" srcset="/img/photos/example-2-768@2x.jpg 2x, /img/photos/example-2-768.jpg 1x">
+                <img class="types__img" src="./img/photos/example-2.jpg" srcset="/img/photos/example-2@2x.jpg 2x" alt="фото велосипеда" width="342" height="503">
+              </picture>
+            </div>
+
+
+            <p class="types__title">Горный велосипед</p>
+          </div>
+
+          <div class="types__item">
+            <div class="types__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="/img/photos/example-3@2x.webp 2x, /img/photos/example-3.webp 1x">
+                <source type="image/webp" media="(max-width: 1439px)" srcset="/img/photos/example-3-768@2x.webp 2x, /img/photos/example-3-768.webp 1x">
+                <source media="(max-width: 1439px)" srcset="/img/photos/example-3-768@2x.jpg 2x, /img/photos/example-3-768.jpg 1x">
+                <img class="types__img" src="./img/photos/example-3.jpg" srcset="/img/photos/example-3@2x.jpg 2x" alt="фото велосипеда" width="342" height="503">
+              </picture>
+            </div>
+            <p class="types__title">Детский велосипед</p>
+          </div>
+        </div>
+        </div>
     </section>
   </main>
   <script src="./js/script.min.js"></script>

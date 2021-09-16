@@ -16,12 +16,17 @@ openNavListButton.addEventListener('click', showNavList)
 closeNavListButton.addEventListener('click', closeNavList)
 
 function validation() {
- console.log(telInput.value)
- const regexp = /a-z-A-Z/
- if(telInput.value === regexp) {
-   console.log('замечена буковка')
+  if(/[a-z-а-я]/.test(telInput.value)) {
+   telInput.value = ''
+   showErrorMessage()
+ } else {
+  telInput.classList.remove('form__input--error')
  }
- return alert('Нельзя буквы1')
 }
 
-telInput.addEventListener('input',validation)
+function showErrorMessage() {
+  telInput.placeholder = 'Вводите цифры, пожалуйста'
+  telInput.classList.add('form__input--error')
+}
+
+telInput.addEventListener('input', validation)
