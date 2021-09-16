@@ -1,0 +1,162 @@
+.form {
+  display: flex;
+  height: 763px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__title {
+  font-size: 46px;
+  line-height: 64px;
+  color: $basic-white;
+  letter-spacing: -0.005em;
+  margin: 0;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.form__wrapper {
+  width: 393px;
+  margin-right: 160px;
+}
+
+.form__description {
+  margin: 0;
+  margin-top: 24px;
+  color: rgba($basic-white, 0.8);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: -0.005em;
+}
+
+.form__form-wrapper {
+  width: 326px;
+}
+
+.form__subtitle {
+  color: $basic-white;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
+  border-radius: 6px;
+  border: 1px solid #c9ccd4;
+  font-size: 15px;
+  line-height: 24px;
+
+  &::placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba($placeholder-color, 0.5);
+  }
+}
+
+.form__input--error {
+  border: 1px solid $error-color;
+
+  &::placeholder {
+    color: $error-color;
+  }
+}
+
+.form__input + .form__input {
+  margin-top: 20px;
+}
+
+.form__submit {
+  width: 100%;
+  background-color: $company-color;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  border: none;
+  margin-top: 20px;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: lighten($company-color, 30%);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form {
+    height: auto;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 80px;
+  }
+
+  .form .logo {
+    display: none;
+  }
+
+  .form__wrapper {
+    margin: 0;
+  }
+
+  .form__title {
+    font-size: 30px;
+    line-height: 42px;
+    white-space: nowrap;
+  }
+
+  .form__description {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .form__subtitle {
+    color: $basic-black;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: $mobile-width) {
+  .form {
+    width: 100%;
+    padding-top: 75px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .form__title {
+    margin: 0;
+    white-space: normal;
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .form__description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .form__form-wrapper,
+  .form__wrapper {
+    width: 100%;
+  }
+
+  .form__subtitle {
+    margin-top: 140px;
+  }
+}
