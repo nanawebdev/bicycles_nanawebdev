@@ -75,7 +75,7 @@ gulp.task('images', function () {
 gulp.task('webp', function () {
   return gulp.src('source/img/photos/*.{png,jpg}')
       .pipe(webp({quality: 90}))
-      .pipe(gulp.dest('source/img'));
+      .pipe(gulp.dest('source/img/photos'));
 });
 
 gulp.task('sprite', function () {

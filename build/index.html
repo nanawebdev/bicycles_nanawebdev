@@ -198,6 +198,36 @@
     </div>
     </section>
   </main>
+
+  <footer class="map-section container">
+    <h3 class="section-title">Как нас найти?</h3>
+    <p class="map-section__text">Мы находимся по адресу: <br>Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+
+    <picture>
+      <source media="(max-width: 767px)" srcset="./img/small-map.png">
+      <source media="(max-width: 1439px)" srcset="./img/middle-map.png">
+      <img class="map-section__map" width="957" alt="карта" src="./img/big-map.png">
+    </picture>
+
+    <ul class="contacts-list">
+      <li class="contacts-list__item">
+        <button type="button" class="contacts-list__button">
+        <svg class="mail-icon" width="26" height="20">
+          <use xlink:href="./img/sprite_auto.svg#mail"></use>
+        </svg>
+        <span>puteshestviemechta@gmail.ru</span>
+      </button>
+    </li>
+    <li class="contacts-list__item">
+      <button type="button" class="contacts-list__button">
+      <svg class="phone-icon" width="22" height="23" fill="none">
+        <use xlink:href="./img/sprite_auto.svg#phone"></use>
+      </svg>
+      <span>puteshestviemechta@gmail.ru</span>
+    </button>
+  </li>
+    </ul>
+  </footer>
   <script src="./js/script.min.js"></script>
 </body>
 
