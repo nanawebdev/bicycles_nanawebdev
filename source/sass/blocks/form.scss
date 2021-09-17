@@ -1,7 +1,7 @@
 .form {
   display: flex;
-  height: 763px;
-  align-items: center;
+  min-height: 763px;
+  padding-top: 255px;
   justify-content: center;
 }
 
@@ -11,13 +11,13 @@
   color: $basic-white;
   letter-spacing: -0.005em;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 27px;
   font-weight: 700;
 }
 
 .form__wrapper {
   width: 393px;
-  margin-right: 160px;
+  margin-right: 80px;
 }
 
 .form__description {
@@ -32,6 +32,7 @@
 
 .form__form-wrapper {
   width: 326px;
+  margin-left: 80px;
 }
 
 .form__subtitle {
@@ -41,21 +42,23 @@
   line-height: 28px;
   letter-spacing: -0.005em;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 6px;
+  margin-bottom: 18px;
 }
 
 .form__input {
   width: 100%;
-  padding-top: 14px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 29px;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  padding-left: 28px;
+  padding-right: 28px;
   border-radius: 6px;
   border: 1px solid #c9ccd4;
   font-size: 15px;
   line-height: 24px;
 
   &::placeholder {
+    font-family: "Open Sans", "Courier", monospace;
     font-size: 15px;
     line-height: 24px;
     color: rgba($placeholder-color, 0.5);
@@ -93,12 +96,21 @@
   }
 }
 
+// Для того, чтобы посмотреть на страницу в режиме "без JS", нужно
+// <body class="main-page"> -> <body class="main-page main-page--no-js">
+
+.main-page--no-js .form__title,
+.main-page--no-js .form__description {
+  color: $title-font;
+}
+
 @media (max-width: $tablet-width) {
   .form {
-    height: auto;
+    min-height: auto;
     flex-direction: column;
     justify-content: start;
-    padding-top: 80px;
+    padding-top: 85px;
+    align-items: center;
   }
 
   .form .logo {
@@ -107,19 +119,26 @@
 
   .form__wrapper {
     margin: 0;
-    height: 287px;
+    min-height: 205px;
+    width: 398px;
   }
 
   .form__title {
+    margin: 0;
     font-size: 30px;
     line-height: 42px;
     white-space: nowrap;
   }
 
   .form__description {
+    margin-top: 19px;
     font-size: 18px;
     line-height: 32px;
     text-align: center;
+  }
+
+  .form__input {
+    padding: 11px 21px 11px;
   }
 
   .form__subtitle {
@@ -128,13 +147,21 @@
     line-height: 28px;
     margin-bottom: 30px;
   }
+
+  .form__form-wrapper {
+    margin-left: 0;
+    min-height: 413px;
+    padding-top: 64px;
+    width: 321px;
+  }
 }
+
 @media (max-width: $mobile-width) {
   .form {
     width: 100%;
-    padding-top: 75px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 71px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .form__title {
@@ -154,5 +181,28 @@
   .form__form-wrapper,
   .form__wrapper {
     width: 100%;
+  }
+
+  .form__form-wrapper {
+    padding-top: 43px;
+    min-height: 410px;
+    box-sizing: border-box;
+  }
+
+  .form__wrapper {
+    min-height: 290px;
+  }
+
+  .form .form__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .form__input {
+    padding: 11px 26px;
+  }
+
+  .form__submit {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }

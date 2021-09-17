@@ -3,7 +3,7 @@
   list-style-type: none;
   justify-content: space-between;
   margin: 0;
-  padding: 21px 18px;
+  padding: 21px 21px;
   padding-bottom: 9px;
 }
 
@@ -13,7 +13,6 @@
   font-size: 16px;
   line-height: 32px;
   letter-spacing: -0.005em;
-  font-weight: 300;
   color: rgba($basic-white, 0.7);
 }
 
@@ -30,7 +29,7 @@
   }
 
   .navigation-list__item + .navigation-list__item {
-    margin-top: 30px;
+    margin-top: 28px;
   }
 
   .navigation-list__link {
@@ -42,5 +41,10 @@
   .navigation {
     max-width: 100%;
     margin: 0;
+  }
+
+  .side-menu .navigation-list__item {
+    font-size: 20px;
+    line-height: 140%;
   }
 }
