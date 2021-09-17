@@ -107,6 +107,7 @@
 
   .form__wrapper {
     margin: 0;
+    height: 287px;
   }
 
   .form__title {
@@ -125,7 +126,6 @@
     color: $basic-black;
     font-size: 18px;
     line-height: 28px;
-    margin-top: 150px;
     margin-bottom: 30px;
   }
 }
@@ -154,9 +154,5 @@
   .form__form-wrapper,
   .form__wrapper {
     width: 100%;
-  }
-
-  .form__subtitle {
-    margin-top: 140px;
   }
 }
