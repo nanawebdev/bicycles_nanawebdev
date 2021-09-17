@@ -1,4 +1,3 @@
-// 300, 700, 600, 400
 @font-face {
   font-weight: 300;
   font-style: normal;
@@ -41,12 +40,16 @@ body {
 }
 
 body {
-  font-family: "Open Sans", Courier, monospace;
+  font-family: "Open Sans", "Courier", monospace;
   font-weight: 400;
   font-size: 16px;
   color: $basic-black;
   margin: 0;
   padding: 0;
+}
+
+.side-menu--open body {
+  overflow: hidden;
 }
 
 .container {
@@ -57,7 +60,7 @@ body {
 html,
 body,
 .header,
-.main  {
+.main {
   width: 100%;
 }
 
@@ -80,6 +83,21 @@ body,
   line-height: 30px;
   letter-spacing: -0.005em;
   color: $title-font;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  background-color: rgba($basic-black, 0.5);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay--show {
+  display: block;
 }
 
 @media (max-width: $tablet-width) {

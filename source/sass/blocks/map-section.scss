@@ -1,5 +1,5 @@
 .map-section {
-  padding-top: 120px;
+  padding-top: 148px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,13 +18,13 @@
   width: 555px;
   text-align: center;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .map-section__map {
   width: 957px;
   height: 530px;
-  margin-bottom: 39px;
+  margin-bottom: 13px;
 }
 
 .map-section__text br {
@@ -33,9 +33,10 @@
 
 @media (max-width: $tablet-width) {
   .map-section {
-    padding-top: 70px;
-    padding-bottom: 53px ;
+    padding-top: 67px;
+    padding-bottom: 40px;
   }
+
   .map-section__map {
     margin-bottom: 20px;
     width: 698px;
@@ -51,25 +52,30 @@
   .map-section__text {
     font-size: 17px;
     line-height: 31px;
-    width: 288px;
-    margin-bottom: 25px;
-    // padding-left: 16px;
-    // padding-right: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .map-section__map {
-    margin-bottom: 31px;
+    margin-bottom: 28px;
     width: 100%;
     height: 250px;
   }
 
   .map-section {
-    padding-bottom: 50px;
+    padding-bottom: 42px;
   }
 
   .map-section__text br {
     display: block;
+  }
+
+  .map-section .section-title {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

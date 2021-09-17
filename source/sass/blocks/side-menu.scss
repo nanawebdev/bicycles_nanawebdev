@@ -12,7 +12,6 @@
   height: 52px;
   background-color: transparent;
   border: none;
-  z-index: 100;
   padding: 0;
   display: none;
 }
@@ -32,6 +31,10 @@
   flex-direction: column;
   justify-content: center;
   padding: 0;
+}
+
+.side-menu--open {
+  z-index: 103;
 }
 
 .main-page--no-js .cross {
@@ -58,7 +61,8 @@
     right: 0;
     background-color: $basic-white;
     width: 320px;
-    height: 568px;
+    padding-top: 100px;
+    padding-bottom: 138px;
     flex-direction: column;
     justify-content: center;
   }
@@ -71,6 +75,11 @@
 
   .main-page--no-js .burger-button {
     display: none;
+  }
+
+  .side-menu--open .bg {
+    display: block;
+    background-color: $error-color;
   }
 }
 
