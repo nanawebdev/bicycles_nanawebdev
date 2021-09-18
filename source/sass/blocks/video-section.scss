@@ -1,15 +1,15 @@
-.video {
+.video-section {
   height: 807px;
   position: relative;
 }
 
-.video__background {
+.video-section__background {
   background-color: $dark-bg;
   height: 706px;
   padding-top: 120px;
 }
 
-.video .section-title {
+.video-section .section-title {
   margin: 0;
   color: $basic-white;
   text-align: center;
@@ -19,7 +19,7 @@
   margin-bottom: 20px;
 }
 
-.video__text {
+.video-section__text {
   width: 340px;
   text-align: center;
   margin: 0 auto;
@@ -29,18 +29,18 @@
   color: rgba($basic-white, 0.7);
 }
 
-.video__wrapper {
+.video-section__wrapper {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.video__preview {
+.video-section__preview {
   position: relative;
 }
 
-.video__button {
+.video-section__button {
   display: flex;
   align-items: center;
   position: absolute;
@@ -60,37 +60,37 @@
   }
 }
 
-.video__button .play {
+.video-section__button .play {
   margin: 0 auto;
 }
 
 @media (max-width: $tablet-width) {
-  .video__img {
+  .video-section__img {
     width: 503px;
     height: 282px;
   }
 
-  .video__background {
+  .video-section__background {
     height: 413px;
     padding-top: 70px;
   }
 
-  .video {
+  .video-section {
     height: 501px;
   }
 
-  .video__button {
+  .video-section__button {
     width: 91px;
     height: 91px;
   }
 
-  .video .section-title {
+  .video-section .section-title {
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -0.005em;
   }
 
-  .video__text {
+  .video-section__text {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.005em;
@@ -100,28 +100,28 @@
 }
 
 @media (max-width: $mobile-width) {
-  .video__button {
+  .video-section__button {
     width: 65px;
     height: 65px;
   }
 
-  .video__background {
+  .video-section__background {
     height: 384px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 84px;
   }
 
-  .video__img {
+  .video-section__img {
     width: 288px;
     height: 162px;
   }
 
-  .video {
+  .video-section {
     height: 436px;
   }
 
-  .video__text {
+  .video-section__text {
     width: auto;
   }
 }
