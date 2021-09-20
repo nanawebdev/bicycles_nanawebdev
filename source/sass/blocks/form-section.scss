@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.form-section__title {
+.form-section__wrapper h2 {
   font-size: 46px;
   line-height: 64px;
   color: $basic-white;
@@ -20,7 +20,7 @@
   margin-right: 80px;
 }
 
-.form-section__description {
+.form-section__wrapper p {
   margin: 0;
   margin-top: 24px;
   color: rgba($basic-white, 0.8);
@@ -35,7 +35,7 @@
   margin-left: 80px;
 }
 
-.form-section__subtitle {
+.form-section__form-wrapper h3 {
   color: $basic-white;
   font-weight: 600;
   font-size: 17px;
@@ -73,21 +73,21 @@
     width: 398px;
   }
 
-  .form-section__title {
+  .form-section__wrapper h2 {
     margin: 0;
     font-size: 30px;
     line-height: 42px;
     white-space: nowrap;
   }
 
-  .form-section__description {
+  .form-section__wrapper p {
     margin-top: 19px;
     font-size: 18px;
     line-height: 32px;
     text-align: center;
   }
 
-  .form-section__subtitle {
+  .form-section__form-wrapper h3 {
     color: $basic-black;
     font-size: 18px;
     line-height: 28px;
@@ -110,7 +110,7 @@
     padding-right: 16px;
   }
 
-  .form-section__title {
+  .form-section__wrapper h2 {
     margin: 0;
     white-space: normal;
     text-align: center;
@@ -118,7 +118,7 @@
     line-height: 42px;
   }
 
-  .form-section__description {
+  .form-section__wrapper p {
     margin-top: 20px;
     font-size: 18px;
     line-height: 32px;
@@ -139,7 +139,7 @@
     min-height: 290px;
   }
 
-  .form-section__subtitle {
+  .form-section__form-wrapper h3 {
     margin-bottom: 20px;
   }
 }

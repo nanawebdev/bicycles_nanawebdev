@@ -1,4 +1,4 @@
-.contacts-list {
+.map-section ul {
   list-style-type: none;
   display: flex;
   padding: 0;
@@ -7,11 +7,11 @@
   flex-wrap: wrap;
 }
 
-.contacts-list__item + .contacts-list__item {
+.map-section li + li {
   margin-left: 90px;
 }
 
-.contacts-list__link {
+.map-section a {
   text-decoration: none;
   display: flex;
   font-size: 16px;
@@ -26,21 +26,21 @@
   }
 }
 
-.contacts-list__link--tel {
+.map-section a[type="tel"] {
   line-height: 32px;
 }
 
-.contacts-list__link .mail-icon,
-.contacts-list__link .phone-icon {
+.map-section .mail-icon,
+.map-section .phone-icon {
   margin-right: 15px;
 }
 
 @media (max-width: $mobile-width) {
-  .contacts-list {
+  .map-section ul {
     flex-direction: column;
   }
 
-  .contacts-list__item + .contacts-list__item {
+  .map-section li + li {
     margin-left: 0;
     margin-top: 23px;
   }

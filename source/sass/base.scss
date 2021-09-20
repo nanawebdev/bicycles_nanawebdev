@@ -3,8 +3,8 @@
   font-style: normal;
   font-family: "Open Sans";
   font-display: swap;
-  src: url("./../fonts/OpenSans-Light.woff") format("woff"),
-    url("./../fonts/OpenSans-Light.woff2") format("woff2");
+  src: url("./../fonts/opensans-light.woff") format("woff"),
+    url("./../fonts/opensans-light.woff2") format("woff2");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-family: "Open Sans";
   font-display: swap;
-  src: url("./../fonts/OpenSans-Regular.woff") format("woff"),
-    url("./../fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("./../fonts/opensans-regular.woff") format("woff"),
+    url("./../fonts/opensans-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -21,8 +21,8 @@
   font-style: normal;
   font-family: "Open Sans";
   font-display: swap;
-  src: url("./../fonts/OpenSans-SemiBold.woff") format("woff"),
-    url("./../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  src: url("./../fonts/opensans-semibold.woff") format("woff"),
+    url("./../fonts/opensans-semibold.woff2") format("woff2");
 }
 
 @font-face {
@@ -30,8 +30,8 @@
   font-style: normal;
   font-family: "Open Sans";
   font-display: swap;
-  src: url("./../fonts/OpenSans-Bold.woff") format("woff"),
-    url("./../fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("./../fonts/opensans-bold.woff") format("woff"),
+    url("./../fonts/opensans-bold.woff2") format("woff2");
 }
 
 html,
@@ -64,6 +64,7 @@ body,
   width: 100%;
 }
 
+form label,
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -77,7 +78,7 @@ body,
   overflow: hidden;
 }
 
-.section-title {
+h3 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;

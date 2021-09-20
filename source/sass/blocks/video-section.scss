@@ -9,7 +9,7 @@
   padding-top: 120px;
 }
 
-.video-section .section-title {
+.video-section h3 {
   margin: 0;
   color: $basic-white;
   text-align: center;
@@ -19,7 +19,7 @@
   margin-bottom: 20px;
 }
 
-.video-section__text {
+.video-section p {
   width: 340px;
   text-align: center;
   margin: 0 auto;
@@ -84,13 +84,13 @@
     height: 91px;
   }
 
-  .video-section .section-title {
+  .video-section h3 {
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -0.005em;
   }
 
-  .video-section__text {
+  .video-section p {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.005em;
@@ -121,7 +121,7 @@
     height: 436px;
   }
 
-  .video-section__text {
+  .video-section p {
     width: auto;
   }
 }

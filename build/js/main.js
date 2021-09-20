@@ -3,17 +3,27 @@
   var openNavListButton = document.querySelector('.js-open-navigation-list');
   var sideMenu = document.querySelector('.side-menu');
   var closeNavListButton = document.querySelector('.js-close-navigation-list');
-  var telInput = document.querySelector('.form__input--tel');
+  var telInput = document.querySelector('input[type=tel]');
   var overlay = document.querySelector('.overlay');
 
   function showNavList() {
-    sideMenu.classList.add('side-menu--open');
-    overlay.classList.add('overlay--show');
+    if (sideMenu) {
+      sideMenu.classList.add('side-menu--open');
+    }
+
+    if (overlay) {
+      overlay.classList.add('overlay--show');
+    }
   }
 
   function closeNavList() {
-    overlay.classList.remove('overlay--show');
-    sideMenu.classList.remove('side-menu--open');
+    if (overlay) {
+      overlay.classList.remove('overlay--show');
+    }
+
+    if (sideMenu) {
+      sideMenu.classList.remove('side-menu--open');
+    }
   }
 
   function validate() {
@@ -26,11 +36,21 @@
   }
 
   function showErrorMessage() {
-    telInput.placeholder = 'Вводите цифры, пожалуйста';
-    telInput.classList.add('form__input--error');
+    if (telInput) {
+      telInput.placeholder = 'Вводите цифры, пожалуйста';
+      telInput.classList.add('form__input--error');
+    }
   }
 
-  openNavListButton.addEventListener('click', showNavList);
-  closeNavListButton.addEventListener('click', closeNavList);
-  telInput.addEventListener('input', validate);
+  if (openNavListButton) {
+    openNavListButton.addEventListener('click', showNavList);
+  }
+
+  if (closeNavListButton) {
+    closeNavListButton.addEventListener('click', closeNavList);
+  }
+
+  if (telInput) {
+    telInput.addEventListener('input', validate);
+  }
 })();

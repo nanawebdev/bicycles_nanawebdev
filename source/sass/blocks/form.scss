@@ -1,4 +1,4 @@
-.form__input {
+.form-section__form-wrapper input {
   width: 100%;
   padding-top: 13px;
   padding-bottom: 9px;
@@ -34,11 +34,11 @@
   }
 }
 
-.form__input + .form__input {
+.form-section__form-wrapper input + input {
   margin-top: 20px;
 }
 
-.form__submit {
+.form-section__form-wrapper button[type="submit"] {
   width: 326px;
   background-color: $company-color;
   border-radius: 6px;
@@ -59,27 +59,27 @@
 }
 
 @media (max-width: $tablet-width) {
-  .form-section .form {
+  .form-section__form-wrapper form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .form__input {
+  .form-section__form-wrapper input {
     padding: 11px 21px 11px;
   }
 
-  .form__submit {
+  .form-section__form-wrapper button[type="submit"] {
     width: 321px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .form__input {
+  .form-section__form-wrapper input {
     padding: 11px 26px;
   }
 
-  .form__submit {
+  .form-section__form-wrapper button[type="submit"] {
     padding-top: 14px;
     padding-bottom: 14px;
     width: 286px;
