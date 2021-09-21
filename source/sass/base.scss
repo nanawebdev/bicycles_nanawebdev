@@ -64,7 +64,7 @@ body,
   width: 100%;
 }
 
-form label,
+.form-section__form-wrapper label,
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -78,7 +78,7 @@ form label,
   overflow: hidden;
 }
 
-h3 {
+.main-page h3 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
