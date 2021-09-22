@@ -32,7 +32,8 @@
 
 .form-section__form-wrapper {
   width: 326px;
-  margin-left: 80px;
+  padding-left: 80px;
+  box-sizing: content-box;
 }
 
 .form-section__form-wrapper h3 {
