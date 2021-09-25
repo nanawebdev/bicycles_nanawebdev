@@ -12,24 +12,8 @@
   <link rel="preload" href="./fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
-<body class="main-page">
-  <picture>
-    <!-- без ретины 767 на 340, c ретиной 1534 на 680 -->
-    <source type="image/webp" media="(max-width: 1439px)"
-      srcset="./img/bike-768.webp 1x, ./img/bike-768@2x.webp 2x">
-    <!-- без ретины 319 на 390, c ретиной 638 на 780 -->
-    <source type="image/webp" media="(max-width: 767px)"
-      srcset="./img/bike-320.webp 1x, ./img/bike-320@2x.webp 2x">
-    <!-- без ретины 1440 на 825, c ретиной 2880 на 1650 -->
-    <source type="image/webp" srcset="./img/bike.webp 1x, ./img/bike@2x.webp 2x">
-    <!-- без ретины 767 на 340, c ретиной 1534 на 680 -->
-    <source media="(max-width: 1439px)" srcset="./img/bike-768.jpg 1x, ./img/bike-768@2x.jpg 2x">
-    <!-- без ретины 319 на 390, c ретиной 638 на 780 -->
-    <source media="(max-width: 767px)" srcset="./img/bike-320.jpg 1x, ./img/bike-320@2x.jpg 2x">
-    <!-- без ретины 1440 на 825, c ретиной 2880 на 1650 -->
-    <img src="img/bike.jpg" srcset="./img/bike@2x.jpg 2x" height="825" width="1440" class="main-page__bg"
-      alt="фото велосипеда">
-  </picture>
+<body class="main-page main-page--no-js">
+  <div class="main-page__bg-wrapper"></div>
 
   <header class="header">
     <div class="container">
@@ -89,7 +73,7 @@
         <svg class="logo" width="68" height="21">
           <use xlink:href="./img/sprite_auto.svg#logo"></use>
         </svg>
-        <h2>Мы продаем велосипеды</h2>
+        <h1>Мы продаем велосипеды</h1>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <div class="form-section__form-wrapper">
@@ -97,10 +81,8 @@
 
         <form>
           <label>Поле для ввода имени</label>
-          <input maxLength="50" minLength="1" type="text" placeholder="Введите Ваше Имя"
-            id="name-input">
-          <input maxLength="11" minLength="11" type="tel"
-            placeholder="Введите Ваш номер телефона" id="phone-input">
+          <input maxLength="50" minLength="1" type="text" placeholder="Введите Ваше Имя" id="name-input" required>
+          <input maxLength="11" minLength="11" type="tel" placeholder="Введите Ваш номер телефона" id="phone-input" required>
           <label for="phone-input">Поле для ввода номера телефона</label>
           <button type="submit">
             Подобрать велосипед мечты
@@ -150,11 +132,10 @@
                 <!-- без ретины 342 на 503, c ретиной 684 на 1006 -->
                 <source type="image/webp" srcset="./img/example-1@2x.webp 2x, ./img/example-1.webp 1x">
                 <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source media="(max-width: 1439px)"
-                  srcset="./img/example-1-768@2x.jpg 2x, ./img/example-1-768.jpg 1x">
+                <source media="(max-width: 1439px)" srcset="./img/example-1-768@2x.jpg 2x, ./img/example-1-768.jpg 1x">
                 <!-- без ретины 342 на 503, c ретиной 684 на 1006 -->
-                <img class="types-section__img" src="./img/example-1.jpg"
-                  srcset="./img/example-1@2x.jpg 2x" alt="фото велосипеда" width="342" height="503">
+                <img class="types-section__img" src="./img/example-1.jpg" srcset="./img/example-1@2x.jpg 2x"
+                  alt="фото велосипеда" width="342" height="503">
               </picture>
 
             </div>
@@ -171,11 +152,10 @@
                 <!-- без ретины 342 на 566, c ретиной 684 на 1132 -->
                 <source type="image/webp" srcset="./img/example-2@2x.webp 2x, ./img/example-2.webp 1x">
                 <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source media="(max-width: 1439px)"
-                  srcset="./img/example-2-768@2x.jpg 2x, ./img/example-2-768.jpg 1x">
+                <source media="(max-width: 1439px)" srcset="./img/example-2-768@2x.jpg 2x, ./img/example-2-768.jpg 1x">
                 <!-- без ретины 342 на 566, c ретиной 684 на 1132 -->
-                <img class="types-section__img" src="./img/example-2.jpg"
-                  srcset="./img/example-2@2x.jpg 2x" alt="фото велосипеда" width="342" height="566">
+                <img class="types-section__img" src="./img/example-2.jpg" srcset="./img/example-2@2x.jpg 2x"
+                  alt="фото велосипеда" width="342" height="566">
               </picture>
             </div>
 
@@ -191,11 +171,10 @@
                 <!-- без ретины 342 на 513, c ретиной 684 на 1026 -->
                 <source type="image/webp" srcset="./img/example-3@2x.webp 2x, ./img/example-3.webp 1x">
                 <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source media="(max-width: 1439px)"
-                  srcset="./img/example-3-768@2x.jpg 2x, /img/example-3-768.jpg 1x">
+                <source media="(max-width: 1439px)" srcset="./img/example-3-768@2x.jpg 2x, /img/example-3-768.jpg 1x">
                 <!-- без ретины 342 на 513, c ретиной 684 на 1026 -->
-                <img class="types-section__img" src="./img/example-3.jpg"
-                  srcset="./img/example-3@2x.jpg 2x" alt="фото велосипеда" width="342" height="512">
+                <img class="types-section__img" src="./img/example-3.jpg" srcset="./img/example-3@2x.jpg 2x"
+                  alt="фото велосипеда" width="342" height="512">
               </picture>
             </div>
             <h4>Детский велосипед</h4>
@@ -228,8 +207,7 @@
               <source type="image/webp" media="(max-width: 1439px)"
                 srcset="./img/video-preview-768.webp 1x, ./img/video-preview-768@2x.webp 2x">
               <!-- без ретины 929 на 522, c ретиной 1858 на 1044 -->
-              <source type="image/webp"
-                srcset="./img/video-preview.webp 1x, ./img/video-preview@2x.webp 2x">
+              <source type="image/webp" srcset="./img/video-preview.webp 1x, ./img/video-preview@2x.webp 2x">
               <!-- без ретины 288 на 162, c ретиной 576 на 324 -->
               <source media="(max-width: 767px)"
                 srcset="./img/video-preview-320.jpg 1x, ./img/video-preview-320@2x.jpg 2x">
@@ -237,8 +215,8 @@
               <source media="(max-width: 1439px)"
                 srcset="./img/video-preview-768.jpg 1x, ./img/video-preview-768@2x.jpg 2x">
               <!-- без ретины 929 на 522, c ретиной 1858 на 1044 -->
-              <img src="img/video-preview.jpg" srcset="./img/video-preview@2x.jpg 2x" height="522"
-                width="929" class="video-section__img" alt="фото велосипеда">
+              <img src="img/video-preview.jpg" srcset="./img/video-preview@2x.jpg 2x" height="522" width="929"
+                class="video-section__img" alt="фото велосипеда">
             </picture>
           </div>
         </div>
@@ -286,6 +264,9 @@
       </li>
     </ul>
   </footer>
+  <script>
+    document.querySelector('.main-page').classList.remove('main-page--no-js');
+  </script>
   <script src="./js/main.js"></script>
 </body>
 

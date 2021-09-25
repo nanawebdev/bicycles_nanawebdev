@@ -5,10 +5,12 @@
   var closeNavListButton = document.querySelector('.js-close-navigation-list');
   var telInput = document.querySelector('input[type=tel]');
   var overlay = document.querySelector('.overlay');
+  var mainPage = document.querySelector('.main-page');
 
   function showNavList() {
     if (sideMenu) {
       sideMenu.classList.add('side-menu--open');
+      mainPage.style.overflow = 'hidden';
     }
 
     if (overlay) {
@@ -23,6 +25,7 @@
 
     if (sideMenu) {
       sideMenu.classList.remove('side-menu--open');
+      mainPage.style.overflow = 'auto';
     }
   }
 

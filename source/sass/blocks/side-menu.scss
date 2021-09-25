@@ -25,23 +25,23 @@
   height: 100%;
 }
 
-.main-page--no-js .navigation-list,
-.side-menu--open .navigation-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
-}
-
 .side-menu--open {
   z-index: 103;
 }
 
-.main-page--no-js .cross {
-  display: none;
-}
-
 @media (max-width: $tablet-width) {
+  .main-page--no-js .navigation-list,
+  .side-menu--open .navigation-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .main-page--no-js .cross {
+    display: none;
+  }
+
   .side-menu {
     display: none;
   }

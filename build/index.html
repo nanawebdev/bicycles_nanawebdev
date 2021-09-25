@@ -12,21 +12,8 @@
   <link rel="preload" href="./fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
-<body class="main-page">
-  <picture>
-    <!-- без ретины 767 на 340, c ретиной 1534 на 680 -->
-    <source type="image/webp" media="(max-width: 1439px)" srcset="./img/bike-768.webp 1x, ./img/bike-768@2x.webp 2x">
-    <!-- без ретины 319 на 390, c ретиной 638 на 780 -->
-    <source type="image/webp" media="(max-width: 767px)" srcset="./img/bike-320.webp 1x, ./img/bike-320@2x.webp 2x">
-    <!-- без ретины 1440 на 825, c ретиной 2880 на 1650 -->
-    <source type="image/webp" srcset="./img/bike.webp 1x, ./img/bike@2x.webp 2x">
-    <!-- без ретины 767 на 340, c ретиной 1534 на 680 -->
-    <source media="(max-width: 1439px)" srcset="./img/bike-768.jpg 1x, ./img/bike-768@2x.jpg 2x">
-    <!-- без ретины 319 на 390, c ретиной 638 на 780 -->
-    <source media="(max-width: 767px)" srcset="./img/bike-320.jpg 1x, ./img/bike-320@2x.jpg 2x">
-    <!-- без ретины 1440 на 825, c ретиной 2880 на 1650 -->
-    <img src="img/bike.jpg" srcset="./img/bike@2x.jpg 2x" height="825" width="1440" class="main-page__bg" alt="фото велосипеда">
-  </picture>
+<body class="main-page main-page--no-js">
+  <div class="main-page__bg-wrapper"></div>
 
   <header class="header">
     <div class="container">
@@ -85,7 +72,7 @@
         <svg class="logo" width="68" height="21">
           <use xlink:href="./img/sprite_auto.svg#logo"></use>
         </svg>
-        <h2>Мы продаем велосипеды</h2>
+        <h1>Мы продаем велосипеды</h1>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <div class="form-section__form-wrapper">
@@ -93,8 +80,8 @@
 
         <form>
           <label>Поле для ввода имени</label>
-          <input maxLength="50" minLength="1" type="text" placeholder="Введите Ваше Имя" id="name-input">
-          <input maxLength="11" minLength="11" type="tel" placeholder="Введите Ваш номер телефона" id="phone-input">
+          <input maxLength="50" minLength="1" type="text" placeholder="Введите Ваше Имя" id="name-input" required="">
+          <input maxLength="11" minLength="11" type="tel" placeholder="Введите Ваш номер телефона" id="phone-input" required="">
           <label for="phone-input">Поле для ввода номера телефона</label>
           <button type="submit">
             Подобрать велосипед мечты
@@ -263,6 +250,9 @@
       </li>
     </ul>
   </footer>
+  <script>
+    document.querySelector('.main-page').classList.remove('main-page--no-js');
+  </script>
   <script src="./js/main.js"></script>
 </body>
 
