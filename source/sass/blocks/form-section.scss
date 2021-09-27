@@ -1,8 +1,13 @@
 .form-section {
-  display: flex;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
   min-height: 763px;
-  padding-top: 255px;
-  justify-content: center;
+  padding: 255px 3% 3% 3%;
+  // justify-content: center;
+  // flex-wrap: wrap;
+  column-gap: 160px;
+  row-gap: 160px;
 }
 
 .form-section__wrapper h1 {
@@ -17,8 +22,13 @@
 
 .form-section__wrapper {
   width: 393px;
-  margin-right: 80px;
+  // margin-right: 80px;
 }
+
+// .form-section__item + .form-section__item {
+//   margin-left: 160px;
+//   margin-bottom: 160px;
+// }
 
 .form-section__wrapper p {
   margin: 0;
@@ -32,11 +42,12 @@
 
 .form-section__form-wrapper {
   width: 326px;
-  padding-left: 80px;
+  // padding-left: 80px;
   box-sizing: content-box;
 }
 
-.form-section__form-wrapper h3 {
+.form-section__form-wrapper span {
+  display: flex;
   color: $basic-white;
   font-weight: 600;
   font-size: 17px;
@@ -55,11 +66,14 @@
   }
 
   .form-section {
+    display: flex;
     min-height: auto;
     flex-direction: column;
     justify-content: start;
     padding-top: 85px;
     align-items: center;
+    row-gap: 0;
+    padding-bottom: 0;
   }
 
   .form-section .logo {
@@ -87,7 +101,7 @@
     text-align: center;
   }
 
-  .form-section__form-wrapper h3 {
+  .form-section__form-wrapper span {
     color: $basic-black;
     font-size: 18px;
     line-height: 28px;
@@ -140,7 +154,7 @@
     min-height: 290px;
   }
 
-  .form-section__form-wrapper h3 {
+  .form-section__form-wrapper span {
     margin-bottom: 20px;
   }
 }

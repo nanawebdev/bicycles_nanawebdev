@@ -6,7 +6,7 @@
   padding-bottom: 90px;
 }
 
-.map-section h3 {
+.map-section h2 {
   margin: 0;
   margin-bottom: 30px;
 }
@@ -24,7 +24,8 @@
 .map-section__map {
   width: 957px;
   height: 530px;
-  margin-bottom: 32px;
+  object-fit: cover;
+  margin-bottom: 36px;
 }
 
 .map-section p br {
@@ -43,7 +44,7 @@
     height: 545px;
   }
 
-  .map-section h3 {
+  .map-section h2 {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 20px;
@@ -74,7 +75,7 @@
     display: block;
   }
 
-  .map-section h3 {
+  .map-section h2 {
     font-size: 18px;
     line-height: 30px;
   }

@@ -78,7 +78,7 @@ body,
   overflow: hidden;
 }
 
-.main-page h3 {
+.main-page h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -100,6 +100,10 @@ body,
 .overlay--show {
   display: block;
 }
+
+// * {
+//   outline: 3px solid red;
+// }
 
 @media (max-width: $tablet-width) {
   .section-title {

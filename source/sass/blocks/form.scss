@@ -52,6 +52,7 @@
   cursor: pointer;
   transition: all 0.3s;
   box-sizing: border-box;
+  word-break: break-all;
 
   &:hover {
     background-color: lighten($company-color, 30%);
