@@ -1,15 +1,25 @@
 .map-section ul {
   list-style-type: none;
   display: flex;
-  align-items: center;
   margin: 0;
+  padding: 0;
   flex-wrap: wrap;
-  padding: 0 40px;
   justify-content: center;
+  // padding: 0 40px;
+  // justify-content: center;
+  // align-items: center;
+
+  @media (min-width: 1440px) {
+    margin-left: -20px;
+  }
 }
 
 .map-section li + li {
   margin-left: 90px;
+}
+
+.map-section li {
+  margin-bottom: 8px;
 }
 
 .map-section a {
@@ -37,13 +47,24 @@
   margin-right: 15px;
 }
 
+@media (max-width: $tablet-width) {
+  .map-section li {
+    margin-left: 9px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .map-section ul {
     flex-direction: column;
+    align-items: center;
   }
 
   .map-section li + li {
-    margin-left: 0;
-    margin-top: 23px;
+    margin-left: 6px;
+    margin-top: 15px;
+  }
+
+  .map-section li {
+    margin-left: 28px;
   }
 }

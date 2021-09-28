@@ -1,7 +1,8 @@
 .navigation-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  text-align: start;
   list-style-type: none;
-  justify-content: space-between;
   margin: 0;
   padding: 21px 21px;
   padding-bottom: 9px;
@@ -15,6 +16,7 @@
   line-height: 32px;
   letter-spacing: -0.005em;
   color: rgba($basic-white, 0.7);
+  margin-right: 134px;
 
   &:hover {
     color: rgba($basic-white, 1);
@@ -30,7 +32,8 @@
     background-color: $grey-bg;
     padding: 17px 35px 17px 16px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    max-width: 100%;
     cursor: pointer;
 
     &:hover {
@@ -56,5 +59,14 @@
   .side-menu .navigation-list__item {
     font-size: 20px;
     line-height: 140%;
+  }
+
+  .side-menu .navigation-list__link {
+    margin-right: 0;
+  }
+
+  .navigation-list__item .arrow {
+    display: flex;
+    margin-left: auto;
   }
 }
