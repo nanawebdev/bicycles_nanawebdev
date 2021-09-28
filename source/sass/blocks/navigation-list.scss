@@ -23,6 +23,10 @@
   }
 }
 
+.navigation-list__item:last-child .navigation-list__link {
+  margin-right: 0;
+}
+
 .navigation-list__item .arrow {
   display: none;
 }

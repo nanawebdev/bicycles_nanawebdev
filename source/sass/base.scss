@@ -76,6 +76,7 @@ main {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  display: none;
 }
 
 .main-page h2 {
@@ -103,6 +104,7 @@ main {
 
 // * {
 //   outline: 3px solid red;
+//   outline-offset: -3px;
 // }
 
 @media (max-width: $tablet-width) {
