@@ -15,8 +15,8 @@
   width: 100%;
   min-height: 825px;
   background-image: image-set(
-    "./../../img/bike.jpg" 1x,
-    "./../../img/bike@2x.jpg" 2x
+    "./../img/bike.jpg" 1x,
+    "./../img/bike@2x.jpg" 2x
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,8 +31,8 @@
   .main-page__bg-wrapper {
     min-height: auto;
     background-image: image-set(
-      "./../../img/bike-768.jpg" 1x,
-      "./../../img/bike-768@2x.jpg" 2x
+      "./../img/bike-768.jpg" 1x,
+      "./../img/bike-768@2x.jpg" 2x
     );
     background-size: 100% 340px;
   }
@@ -45,8 +45,8 @@
 @media (max-width: $mobile-width) {
   .main-page__bg-wrapper {
     background-image: image-set(
-      "./../../img/bike-320.jpg" 1x,
-      "./../../img/bike-320@2x.jpg" 2x
+      "./../img/bike-320.jpg" 1x,
+      "./../img/bike-320@2x.jpg" 2x
     );
     background-size: 100% 390px;
   }
