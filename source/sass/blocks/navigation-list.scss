@@ -1,6 +1,5 @@
 .navigation-list {
-  display: grid;
-  grid-template-columns: repeat(4, max-content);
+  display: flex;
   text-align: start;
   list-style-type: none;
   margin: 0;
@@ -8,7 +7,10 @@
   padding-bottom: 9px;
   flex-wrap: wrap;
   column-gap: 134px;
-  overflow: auto;
+}
+
+.navigation-list__item {
+  flex-grow: 1;
 }
 
 .navigation-list__link {
