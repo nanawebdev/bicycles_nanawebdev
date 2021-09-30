@@ -25,7 +25,7 @@
   width: 957px;
   height: 530px;
   object-fit: cover;
-  margin-bottom: 36px;
+  margin-bottom: 39px;
 }
 
 .map-section p br {
@@ -34,12 +34,12 @@
 
 @media (max-width: $tablet-width) {
   .map-section {
-    padding-top: 67px;
+    padding-top: 70px;
     padding-bottom: 40px;
   }
 
   .map-section__map {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     width: 698px;
     height: 545px;
   }
@@ -62,13 +62,14 @@
 
 @media (max-width: $mobile-width) {
   .map-section__map {
-    margin-bottom: 28px;
+    margin-bottom: 14px;
     width: 100%;
     height: auto;
   }
 
   .map-section {
     padding-bottom: 42px;
+    padding-top: 68px;
   }
 
   .map-section p br {
@@ -83,5 +84,6 @@
   .map-section p {
     padding-left: 28px;
     padding-right: 28px;
+    margin-bottom: 18px;
   }
 }

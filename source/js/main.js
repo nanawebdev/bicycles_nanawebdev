@@ -7,20 +7,7 @@
   var overlay = document.querySelector('.overlay');
   var mainPage = document.querySelector('.main-page');
   var navLinks = document.querySelectorAll('.navigation-list__link');
-
-  var smoothLinks = document.querySelectorAll('a[href^="#"]');
-  for (var index = 0; index < smoothLinks.length; index++) {
-    var smoothLink = smoothLinks[index];
-    smoothLink.addEventListener('click', function (e) {
-      e.preventDefault();
-      var id = smoothLink.getAttribute('href');
-
-      document.querySelector(id).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    });
-  }
+  var form = document.querySelector('form');
 
   function showNavList() {
     if (sideMenu) {
@@ -44,8 +31,6 @@
     }
   }
 
-  var form = document.querySelector('form');
-
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     validate();
@@ -63,9 +48,13 @@
     }
   }
 
-  navLinks.forEach(function (el) {
-    el.addEventListener('click', closeNavList);
-  });
+  for (var index = 0; index < navLinks.length; index++) {
+    var element = navLinks[index];
+
+    element.addEventListener('click', function () {
+      closeNavList();
+    });
+  }
 
   function showErrorMessage() {
     if (telInput) {

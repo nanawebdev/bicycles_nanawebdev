@@ -39,6 +39,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", "Courier", monospace;
   font-weight: 400;

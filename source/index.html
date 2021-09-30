@@ -13,218 +13,217 @@
 </head>
 
 <body class="main-page main-page--no-js">
-
-  <div class="main-page__color-bg">
-    <div class="main-page__bg-wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="navigation">
-            <svg class="navigation__logo logo" width="68" height="21">
-              <use xlink:href="./img/sprite_auto.svg#logo"></use>
-            </svg>
-            <button class="navigation__burger-button burger-button js-open-navigation-list" type="button"
-              aria-label="открыть меню навигации">
-              <svg class="menu-icon burger-button__menu-icon" width="30" height="30">
-                <use xlink:href="./img/sprite_auto.svg#menu"></use>
+  <div class="content">
+    <div class="main-page__color-bg">
+      <div class="main-page__bg-wrapper">
+        <header class="header">
+          <div class="container">
+            <div class="navigation">
+              <svg class="navigation__logo logo" width="68" height="21">
+                <use xlink:href="./img/sprite_auto.svg#logo"></use>
               </svg>
-            </button>
-            <div class="overlay"></div>
-            <div class="side-menu">
-              <button class="side-menu__close js-close-navigation-list" type="button"
-                aria-label="закрыть меню навигации">
-                <svg class="cross" width="50" height="52">
-                  <use xlink:href="./img/sprite_auto.svg#cross"></use>
+              <button class="navigation__burger-button burger-button js-open-navigation-list" type="button"
+                aria-label="открыть меню навигации">
+                <svg class="menu-icon burger-button__menu-icon" width="30" height="30">
+                  <use xlink:href="./img/sprite_auto.svg#menu"></use>
                 </svg>
               </button>
+              <div class="overlay"></div>
+              <div class="side-menu">
+                <button class="side-menu__close js-close-navigation-list" type="button"
+                  aria-label="закрыть меню навигации">
+                  <svg class="cross" width="50" height="52">
+                    <use xlink:href="./img/sprite_auto.svg#cross"></use>
+                  </svg>
+                </button>
 
-              <ul class="navigation-list">
-                <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="#aboutUs">О нас</a>
-                  <svg class="arrow" width="25" height="25">
-                    <use xlink:href="./img/sprite_auto.svg#arrow"></use>
-                  </svg>
-                </li>
-                <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="#typesOfBicycles">Виды велосипедов</a>
-                  <svg class="arrow" width="25" height="25">
-                    <use xlink:href="./img/sprite_auto.svg#arrow"></use>
-                  </svg>
-                </li>
-                <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="#video">Видео про велосипеды</a>
-                  <svg class="arrow" width="25" height="25">
-                    <use xlink:href="./img/sprite_auto.svg#arrow"></use>
-                  </svg>
-                </li>
-                <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="#contacts">Контакты</a>
-                  <svg class="arrow" width="25" height="25">
-                    <use xlink:href="./img/sprite_auto.svg#arrow"></use>
-                  </svg>
-                </li>
-              </ul>
+                <ul class="navigation-list">
+                  <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#aboutus">О нас</a>
+                    <svg class="arrow" width="25" height="25">
+                      <use xlink:href="./img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                  </li>
+                  <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#typesOfBicycles">Виды велосипедов</a>
+                    <svg class="arrow" width="25" height="25">
+                      <use xlink:href="./img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                  </li>
+                  <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#video">Видео про велосипеды</a>
+                    <svg class="arrow" width="25" height="25">
+                      <use xlink:href="./img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                  </li>
+                  <li class="navigation-list__item">
+                    <a class="navigation-list__link" href="#contacts">Контакты</a>
+                    <svg class="arrow" width="25" height="25">
+                      <use xlink:href="./img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="divider"></div>
+            </div>
+          </div>
+        </header>
+        <section class="form-section container">
+          <div class="form-section__wrapper form-section__item">
+            <svg class="logo" width="68" height="21">
+              <use xlink:href="./img/sprite_auto.svg#logo"></use>
+            </svg>
+            <h1>Мы продаем велосипеды</h1>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          </div>
+          <div class="form-section__form-wrapper form-section__item">
+            <span>Заполните поля ниже и мы подберем велосипед Вашей мечты</span>
+
+            <form>
+              <label>Поле для ввода имени</label>
+              <input maxLength="50" minLength="1" type="text" placeholder="Введите Ваше Имя" id="name-input" required>
+              <input maxLength="11" minLength="11" type="tel" placeholder="Введите Ваш номер телефона" id="phone-input"
+                required>
+              <label for="phone-input">Поле для ввода номера телефона</label>
+              <button type="submit">
+                Подобрать велосипед мечты
+              </button>
+            </form>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <main>
+      <section class="facts-section" id="aboutus">
+        <div class="container">
+          <h2>Несколько фактов о нас</h2>
+
+          <ul>
+            <li>
+              <span>01</span>
+              <p>Самый широкий выбор велосипедов!</p>
+            </li>
+            <li>
+              <span>02</span>
+              <p>Доставка велосипедов по всей России!</p>
+            </li>
+            <li>
+              <span>03</span>
+              <p>Большой выбор крутых аксессуаров!</p>
+            </li>
+            <li>
+              <span>04</span>
+              <p>Профессиональные консультации!</p>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="types-section" id="typesOfBicycles">
+        <div class="container">
+          <h2>Виды велосипедов</h2>
+
+          <div class="types-section__items">
+            <div class="types-section__item">
+              <div class="types-section__img-wrapper">
+                <picture>
+                  <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/example-1-768@2x.webp 2x, ./img/example-1-768.webp 1x">
+                  <!-- без ретины 342 на 503, c ретиной 684 на 1006 -->
+                  <source type="image/webp" srcset="./img/example-1@2x.webp 2x, ./img/example-1.webp 1x">
+                  <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
+                  <source media="(max-width: 1023px)" srcset="./img/example-1-768@2x.jpg 2x, ./img/example-1-768.jpg 1x">
+                  <!-- без ретины 342 на 503, c ретиной 684 на 1006 -->
+                  <img class="types-section__img" src="./img/example-1.jpg" srcset="./img/example-1@2x.jpg 2x"
+                    alt="фото велосипеда" width="342" height="503">
+                </picture>
+
+              </div>
+              <span>Дорожный велосипед</span>
             </div>
 
-            <div class="divider"></div>
+            <div class="types-section__item">
+              <div class="types-section__img-wrapper">
+                <picture>
+                  <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/example-2-768@2x.webp 2x, ./img/example-2-768.webp 1x">
+                  <!-- без ретины 342 на 566, c ретиной 684 на 1132 -->
+                  <source type="image/webp" srcset="./img/example-2@2x.webp 2x, ./img/example-2.webp 1x">
+                  <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
+                  <source media="(max-width: 1023px)" srcset="./img/example-2-768@2x.jpg 2x, ./img/example-2-768.jpg 1x">
+                  <!-- без ретины 342 на 566, c ретиной 684 на 1132 -->
+                  <img class="types-section__img" src="./img/example-2.jpg" srcset="./img/example-2@2x.jpg 2x"
+                    alt="фото велосипеда" width="342" height="566">
+                </picture>
+              </div>
+              <span>Горный велосипед</span>
+            </div>
+
+            <div class="types-section__item">
+              <div class="types-section__img-wrapper">
+                <picture>
+                  <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="./img/example-3-768@2x.webp 2x, ./img/example-3-768.webp 1x">
+                  <!-- без ретины 342 на 513, c ретиной 684 на 1026 -->
+                  <source type="image/webp" srcset="./img/example-3@2x.webp 2x, ./img/example-3.webp 1x">
+                  <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
+                  <source media="(max-width: 1023px)" srcset="./img/example-3-768@2x.jpg 2x, /img/example-3-768.jpg 1x">
+                  <!-- без ретины 342 на 513, c ретиной 684 на 1026 -->
+                  <img class="types-section__img" src="./img/example-3.jpg" srcset="./img/example-3@2x.jpg 2x"
+                    alt="фото велосипеда" width="342" height="512">
+                </picture>
+              </div>
+              <span>Детский велосипед</span>
+            </div>
           </div>
-        </div>
-      </header>
-      <section class="form-section container">
-        <div class="form-section__wrapper form-section__item">
-          <svg class="logo" width="68" height="21">
-            <use xlink:href="./img/sprite_auto.svg#logo"></use>
-          </svg>
-          <h1>Мы продаем велосипеды</h1>
-          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-        </div>
-        <div class="form-section__form-wrapper form-section__item">
-          <span>Заполните поля ниже и мы подберем велосипед Вашей мечты</span>
-
-          <form>
-            <label>Поле для ввода имени</label>
-            <input maxLength="50" minLength="1" type="text" placeholder="Введите Ваше Имя" id="name-input" required>
-            <input maxLength="11" minLength="11" type="tel" placeholder="Введите Ваш номер телефона" id="phone-input"
-              required>
-            <label for="phone-input">Поле для ввода номера телефона</label>
-            <button type="submit">
-              Подобрать велосипед мечты
-            </button>
-          </form>
-
         </div>
       </section>
-    </div>
+
+      <section class="video-section" id="video">
+        <div class="video-section__background">
+          <div class="container">
+            <h2>Видео про велосипеды</h2>
+            <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
+            </p>
+            <div class="video-section__preview">
+              <button class="video-section__button" type="button" aria-label="включить видео">
+                <svg class="play" width="13" height="19">
+                  <use xlink:href="./img/sprite_auto.svg#play"></use>
+                </svg>
+
+              </button>
+              <picture class="video-section__img">
+                <!-- без ретины 288 на 162, c ретиной 576 на 324 -->
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/video-preview-320.webp 1x, ./img/video-preview-320@2x.webp 2x">
+                <!-- без ретины 503 на 282, c ретиной 1006 на 564 -->
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="./img/video-preview-768.webp 1x, ./img/video-preview-768@2x.webp 2x">
+                <!-- без ретины 929 на 522, c ретиной 1858 на 1044 -->
+                <source type="image/webp" srcset="./img/video-preview.webp 1x, ./img/video-preview@2x.webp 2x">
+                <!-- без ретины 288 на 162, c ретиной 576 на 324 -->
+                <source media="(max-width: 767px)"
+                  srcset="./img/video-preview-320.jpg 1x, ./img/video-preview-320@2x.jpg 2x">
+                <!-- без ретины 503 на 282, c ретиной 1006 на 564 -->
+                <source media="(max-width: 1023px)"
+                  srcset="./img/video-preview-768.jpg 1x, ./img/video-preview-768@2x.jpg 2x">
+                <!-- без ретины 929 на 522, c ретиной 1858 на 1044 -->
+                <img src="img/video-preview.jpg" srcset="./img/video-preview@2x.jpg 2x" height="522" width="929"
+                  class="video-section__img" alt="фото велосипеда">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
-
-  <main>
-    <section class="facts-section" id="aboutUs">
-      <div class="container">
-        <h2>Несколько фактов о нас</h2>
-
-        <ul>
-          <li>
-            <span>01</span>
-            <p>Самый широкий выбор велосипедов!</p>
-          </li>
-          <li>
-            <span>02</span>
-            <p>Доставка велосипедов по всей России!</p>
-          </li>
-          <li>
-            <span>03</span>
-            <p>Большой выбор крутых аксессуаров!</p>
-          </li>
-          <li>
-            <span>04</span>
-            <p>Профессиональные консультации!</p>
-          </li>
-        </ul>
-      </div>
-
-    </section>
-
-    <section class="types-section" id="typesOfBicycles">
-      <div class="container">
-        <h2>Виды велосипедов</h2>
-
-        <div class="types-section__items">
-          <div class="types-section__item">
-            <div class="types-section__img-wrapper">
-              <picture>
-                <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="./img/example-1-768@2x.webp 2x, ./img/example-1-768.webp 1x">
-                <!-- без ретины 342 на 503, c ретиной 684 на 1006 -->
-                <source type="image/webp" srcset="./img/example-1@2x.webp 2x, ./img/example-1.webp 1x">
-                <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source media="(max-width: 1023px)" srcset="./img/example-1-768@2x.jpg 2x, ./img/example-1-768.jpg 1x">
-                <!-- без ретины 342 на 503, c ретиной 684 на 1006 -->
-                <img class="types-section__img" src="./img/example-1.jpg" srcset="./img/example-1@2x.jpg 2x"
-                  alt="фото велосипеда" width="342" height="503">
-              </picture>
-
-            </div>
-            <span>Дорожный велосипед</span>
-          </div>
-
-          <div class="types-section__item">
-            <div class="types-section__img-wrapper">
-              <picture>
-                <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="./img/example-2-768@2x.webp 2x, ./img/example-2-768.webp 1x">
-                <!-- без ретины 342 на 566, c ретиной 684 на 1132 -->
-                <source type="image/webp" srcset="./img/example-2@2x.webp 2x, ./img/example-2.webp 1x">
-                <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source media="(max-width: 1023px)" srcset="./img/example-2-768@2x.jpg 2x, ./img/example-2-768.jpg 1x">
-                <!-- без ретины 342 на 566, c ретиной 684 на 1132 -->
-                <img class="types-section__img" src="./img/example-2.jpg" srcset="./img/example-2@2x.jpg 2x"
-                  alt="фото велосипеда" width="342" height="566">
-              </picture>
-            </div>
-            <span>Горный велосипед</span>
-          </div>
-
-          <div class="types-section__item">
-            <div class="types-section__img-wrapper">
-              <picture>
-                <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="./img/example-3-768@2x.webp 2x, ./img/example-3-768.webp 1x">
-                <!-- без ретины 342 на 513, c ретиной 684 на 1026 -->
-                <source type="image/webp" srcset="./img/example-3@2x.webp 2x, ./img/example-3.webp 1x">
-                <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
-                <source media="(max-width: 1023px)" srcset="./img/example-3-768@2x.jpg 2x, /img/example-3-768.jpg 1x">
-                <!-- без ретины 342 на 513, c ретиной 684 на 1026 -->
-                <img class="types-section__img" src="./img/example-3.jpg" srcset="./img/example-3@2x.jpg 2x"
-                  alt="фото велосипеда" width="342" height="512">
-              </picture>
-            </div>
-            <span>Детский велосипед</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="video-section" id="video">
-      <div class="video-section__background">
-        <div class="container">
-          <h2>Видео про велосипеды</h2>
-          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
-          </p>
-          <!-- <div class="video-section__wrapper"> -->
-          <div class="video-section__preview">
-            <button class="video-section__button" type="button" aria-label="включить видео">
-              <svg class="play" width="13" height="19">
-                <use xlink:href="./img/sprite_auto.svg#play"></use>
-              </svg>
-
-            </button>
-            <picture class="video-section__img">
-              <!-- без ретины 288 на 162, c ретиной 576 на 324 -->
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="./img/video-preview-320.webp 1x, ./img/video-preview-320@2x.webp 2x">
-              <!-- без ретины 503 на 282, c ретиной 1006 на 564 -->
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="./img/video-preview-768.webp 1x, ./img/video-preview-768@2x.webp 2x">
-              <!-- без ретины 929 на 522, c ретиной 1858 на 1044 -->
-              <source type="image/webp" srcset="./img/video-preview.webp 1x, ./img/video-preview@2x.webp 2x">
-              <!-- без ретины 288 на 162, c ретиной 576 на 324 -->
-              <source media="(max-width: 767px)"
-                srcset="./img/video-preview-320.jpg 1x, ./img/video-preview-320@2x.jpg 2x">
-              <!-- без ретины 503 на 282, c ретиной 1006 на 564 -->
-              <source media="(max-width: 1023px)"
-                srcset="./img/video-preview-768.jpg 1x, ./img/video-preview-768@2x.jpg 2x">
-              <!-- без ретины 929 на 522, c ретиной 1858 на 1044 -->
-              <img src="img/video-preview.jpg" srcset="./img/video-preview@2x.jpg 2x" height="522" width="929"
-                class="video-section__img" alt="фото велосипеда">
-            </picture>
-          </div>
-        </div>
-        <!-- </div> -->
-      </div>
-    </section>
-  </main>
 
   <footer class="map-section container" id="contacts">
     <h2>Как нас найти?</h2>
