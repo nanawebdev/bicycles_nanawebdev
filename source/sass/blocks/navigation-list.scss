@@ -41,6 +41,7 @@
     display: flex;
     max-width: 100%;
     cursor: pointer;
+    align-items: center;
 
     &:hover {
       background-color: darken($grey-bg, 20%);
@@ -76,7 +77,6 @@
   .navigation-list__item .arrow {
     display: flex;
     margin-left: auto;
-    height: 100%;
     width: 25px;
   }
 }
